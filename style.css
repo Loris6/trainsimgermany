@@ -1,16 +1,18 @@
 body {
     background: #E6E6E6;
+    transition: all 0.2s ease-in-out;
 }
 
 body.Night {
-    background: #000;
+    background: #0f1218;
     color: #fff;
 }
 
 .button {
     width: 100px;
     height: 50px;
-    background: #000;
+    background: #161b22;
+    color: #fff;
 }
 
 body.Night button {

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background: #0f1218;
+  color: #e6edf3;
+}
+
+/* Header */
+.app-header {
+  padding: 16px;
+  background: #ec0016;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* App Layout */
+.app {
+  padding: 16px;
+}
+
+/* Search */
+.search-box input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Sections */
+section {
+  margin-top: 24px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Cards */
+.card-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.card {
+  background: #161b22;
+  padding: 14px;
+  border-radius: 14px;
+  min-width: 120px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.big {
+  min-width: 100%;
+}
