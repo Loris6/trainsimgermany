@@ -1,10 +1,16 @@
 body {
     background: #E6E6E6;
     transition: all 0.2s ease-in-out;
+    
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 body.Night {
-    background: #0f1218;
+    background: #000;
     color: #fff;
 }
 
@@ -15,7 +21,11 @@ body.Night {
     color: #fff;
 }
 
-body.Night button {
+body.Night .menu {
     background: #fff;
     color: #000;
+}
+
+body.Night nav {
+    background: #393939;
 }

@@ -5,15 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  
   <style>
     body {
       background: transparent;
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+      overflow: hidden;
+      margin: 0;
+    }
+    
+    navHolder {
+      position: fixed;
+      top: 5vw;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
     }
     
     nav {
-      top: 5vw;
-      left: 5vw;
-      position: fixed;
+      position: relative;
       
       width: 90vw;
       height: 75px;
@@ -21,6 +34,27 @@
       background: #E6E6E6;
       
       border-radius: 4vmin;
+      
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      box-sizing: border-box;
+    }
+    
+    .button {
+      width: 100px;
+      height: 50px;
+      background: #161b22;
+      color: #fff;
+    }
+    
+    .menu {
+      height: 60%;
+      aspect-ratio: 1 / 1;
+      background: #000;
+      color: #fff;
     }
     
   </style>
@@ -29,9 +63,15 @@
 </head>
 
 <body>
+  <navHolder>
   <nav>
-    
+    <button id="toogler" class="menu"><i data-Lucide="moon"></i></button>
   </nav>
+  </navHolder>
+  
+  <script>
+    lucide.createIcons()
+  </script>
 </body>
 
 </html>

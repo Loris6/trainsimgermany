@@ -18,6 +18,7 @@
   
   <!-- HTML -->
   
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="main.css">
@@ -26,10 +27,11 @@
 
 <body>
   <p>Nothing to see here...</p>
-  <button id="toogler" class="button">hi bro</button>
+  <button id="toog" class="button">hi bro</button>
   <!-- Project -->
   <script src="main.js"></script>
   <script src="toogleMode.js"></script>
+  <script src="nav.js"></script>
   
   <script>
     if ("serviceWorker" in navigator) {
@@ -37,6 +39,10 @@
     .then(() => console.log("✅ Service Worker registered"))
     .catch(err => console.error("❌ SW failed:", err));
 }
+  </script>
+  
+  <script>
+    lucide.createIcons()
   </script>
 </body>
 </html>
