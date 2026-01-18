@@ -1,4 +1,4 @@
-const CACHE_NAME = "tsg-cache-v2";
+const CACHE_NAME = "tsg-cache-v3";
 
 const ASSETS = [
   "/",
