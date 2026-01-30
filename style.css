@@ -10,7 +10,7 @@ body {
 }
 
 body.Night {
-    background: #000;
+    background: #101010;
     color: #fff;
 }
 
@@ -22,10 +22,10 @@ body.Night {
 }
 
 body.Night .menu {
-    background: #fff;
-    color: #000;
+    color: #fff;
+    background: transparent;
 }
 
 body.Night nav {
-    background: #393939;
+    background: #252525;
 }
